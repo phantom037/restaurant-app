@@ -1,0 +1,165 @@
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+
+    max-width: 470px;
+    margin: auto;
+    padding-top: 4rem;
+    text-align: center;
+}
+
+a {
+    color: inherit;
+    text-decoration: none; /* no underline */
+}
+
+.header-title {
+    font-size: 4rem;
+    font-weight: bold;
+}
+.header-subtitle {
+    font-size: 2rem;
+    margin-top: .3rem;
+}
+.header-sales {
+    font-style: italic;
+    margin-top: .4rem;
+    font-size: 1.6rem;
+}
+
+.section--available-waiters {
+
+}
+
+.section-title {
+    font-size: 2.4rem;
+    margin-top: 3rem;
+    font-weight: bold;
+}
+
+.waiterCardList {
+    /*Columns*/
+    -webkit-columns: 2 30px;
+    column-gap: 20px;
+    margin-top: 1rem;
+}
+
+.waiterCard:not(:first-child) {
+    margin-top: 1rem;
+}
+.waiterCard {
+    /* Columns */
+    -webkit-column-break-inside: avoid;
+
+    background-color: #F3F3F3;
+    padding: .8rem 1.2rem;
+    border-radius: 3px;
+    border: solid 2px #CCCCCC;
+    overflow: hidden;
+    transition: .4s;
+    cursor: pointer;
+}
+.waiterCard:hover {
+    border-color: #969696;
+    background-color: #e3e3e3;
+}
+
+.waiterCard-divider {
+    height: 1px;
+    width: 140%;
+    margin: .8rem 0rem 1rem -2rem;
+    background-color: #CCCCCC;
+}
+
+.waiterBtn {
+    display: inline-block;
+    background-color: #F3F3F3;
+    border: solid 1px darkgray;
+    border-radius: 3px;
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    transition: .3s;
+}
+.waiterBtn:hover {
+    border-color: darkgray;
+    background-color: darkgray;
+}
+
+.menuTable {
+    border-spacing: 1rem;
+    margin: auto;
+    margin-top: .7rem;
+    text-align: left;
+}
+.foodIndex {
+    font-weight: bold;
+}
+.foodName {
+    padding-left: .6rem;
+}
+.foodPrice {
+    padding-left: 6rem;
+}
+
+.modal {
+    padding-top: 2.2rem;
+    padding-bottom: 2.6rem;
+}
+
+.optionsContainer {
+    display: flex;
+    flex-direction: row;
+}
+.optionsButtons {
+    width: 50%;
+}
+.optionsInput {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.entry {
+    margin-top: 1.3rem;
+    height: 30px;
+    text-align: right;
+}
+.fieldInput {
+    font-size: 1.6rem;
+    width: 6rem;
+}
+.checkInput {
+    margin-left: 1rem;
+    margin-bottom: .1rem;
+}
+.searchFieldContainer {
+    margin-top: 3rem;
+}
+
+#searchField {
+    border:none;
+    border-bottom: 1px solid darkgray;
+    padding: 3px 8px;
+    font-size: 1.5rem;
+    outline: none;
+    width: 100%;
+    text-align: center;
+}
+#searchField:focus {
+    transition: all 0.4s;
+    border-bottom: 1px solid black;
+}

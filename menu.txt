@@ -1,0 +1,14 @@
+Cheese Burger
+4.99
+Small Pizza
+9.99
+Medium Pizza
+12.99
+Large Pizza
+15.99
+Vanilla Ice Cream
+2.99
+Chocolate Ice Cream
+2.99
+Strawberry Ice Cream
+2.99

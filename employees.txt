@@ -1,0 +1,20 @@
+Olivia Dodson
+9.5
+121.3
+Brian Wang
+11.0
+50.32
+James Bond
+12.0
+211.5
+Michael Reeds
+9.5
+126.3
+Amelia Baxter
+12.0
+210.5
+Bruce Damian
+10.0
+125.43
+[totalSales]
+158.26000000000002

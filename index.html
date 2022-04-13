@@ -1,0 +1,99 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>Restaurant Manager</title>
+    <meta name="description" content="Restaurant management software">
+    <meta name="author" content="SitePoint">
+
+    <!--    Jquery and modal class-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- Title -->
+<div class="header">
+    <div class="header-title">Digital Dining</div>
+    <div class="header-subtitle">All in one restaurant management software</div>
+    <div class="header-sales" id="totalSales">Total Sales: $0.00</div>
+</div>
+
+<!-- Waiter Lists -->
+<div class="content">
+
+    <div class="searchFieldContainer"><input id="searchField" type="text" placeholder="🔎 Find waiter..."></div>
+
+    <div class="section--available-waiters">
+        <div class="section-title">Available Waiters</div>
+        <div id="availableWaiterCardList" class="waiterCardList">
+            <div class="waiterCard">
+                <div class="waiterCard-title">James Bond</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section--busy-waiters">
+        <div class="section-title">Busy Waiters</div>
+        <div id="busyWaiterCardList" class="waiterCardList">
+            <div class="waiterCard">
+                <div class="waiterCard-title">Jack Soma</div>
+                <div class="waiterCard-divider"></div>
+                <div class="waiterCard-food">Grilled Steak (3)</div>
+                <div class="waiterCard-food">Cheese Burger</div>
+                <div class="waiterCard-food">Chocolate Ice Cream</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Menu -->
+<div class="section-title">Menu</div>
+<table class="menuTable" id="menuTable">
+    <tr>
+        <td class="foodIndex"><b>#1</b></td>
+        <td class="foodName">Grilled Cheeseburger</td>
+        <td class="foodPrice">$4.99</td>
+    </tr>
+    <tr>
+        <td class="foodIndex"><b>#2</b></td>
+        <td class="foodName">Vanilla Ice Cream</td>
+        <td class="foodPrice">$1.99</td>
+    </tr>
+</table>
+
+
+
+<!-- Modal HTML embedded directly into document -->
+<div id="employeeModal" class="modal">
+    <h3 id="employeeModal-title">James Bond</h3>
+    <p id="employeeModal-tips">Total Tips: $102.20</p>
+    <p id="employeeModal-salary">Hourly Pay: $10.50</p>
+    <br>
+    <p>Please select an option below.</p>
+    <div class="optionsContainer">
+        <div class="optionsButtons">
+            <div id="tipBtn" class="waiterBtn">Give a tip</div><br>
+            <div id="orderBtn" class="waiterBtn">Order food</div><br>
+            <div id="closeTableBtn" class="waiterBtn">Close the table</div><div id="closeTableBtnBreak"><br></div>
+            <div id="fireBtn" class="waiterBtn">Fire employee</div>
+        </div>
+        <div class="optionsInput">
+            <div class="entry"> Tip Amount: <input class="fieldInput" id="tipField" type="text"></div>
+            <div class="entry"> Item #: <input class="fieldInput" id="orderField" type="text"></div>
+            <div class="entry" id="refundEntry">Refund<input class="checkInput" id="refundCheckbox" type="checkbox"></div>
+        </div>
+    </div>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
